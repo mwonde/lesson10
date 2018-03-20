@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div[class^='btn']{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	background-color: red;
+	text-align: center;
+	position: relative;
+	margin: 20px auto;
+	z-index: 1;
+}
+.btn1:before{
+	content:'';
+	width: 100%;
+	height: 0;
+	background-color: yellow;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 1s;
+}
+.btn1:hover:before{
+	height: 100%;
+}
+
+.btn2:after{
+	content:'';
+	width: 100%;
+	height: 0;
+	background-color: blue;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: 1s;
+}
+.btn2:hover:after{
+	height: 100%;
+}
+
+
+.btn3:after{
+	content:'';
+	width: 0;
+	height: 100%;
+	background-color: green;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: 1s;
+}
+.btn3:hover:after{
+	width: 100%;
+}
+
+
+.btn4:after{
+	content:'';
+	width: 0;
+	height: 100%;
+	background-color: violet;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	transition: 1s;
+}
+.btn4:hover:after{
+	width: 100%;
+}
+
+
+.btn5:before{
+	content:'';
+	width: 0;
+	height: 100%;
+	background-color: aqua;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: 1s;
+}
+.btn5:after{
+	content:'';
+	width: 0;
+	height: 100%;
+	background-color: aqua;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	transition: 1s;
+}
+.btn5:hover:after,
+.btn5:hover:before{
+	width: 50%;
+}
+
+
+.btn6:before{
+	content:'';
+	width: 0;
+	height: 100%;
+	background-color: aqua;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: -1;
+	transition: 1s;
+}
+
+.btn6:after{
+	content:'';
+	width: 0;
+	height: 100%;
+	background-color: aqua;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	z-index: -1;
+	transition: 1s;
+}
+.btn6:hover:after,
+.btn6:hover:before{
+	width: 50%;
+}
